@@ -7,7 +7,7 @@
 # Author version 1: Marieke van Erp  marieke.van.erp@vu.nl
 # Date: 2 June 2015
 
-# Author version 2: Antske Fokkens antske.fokkens@vu.nl
+# Author version 2 updates: Antske Fokkens antske.fokkens@vu.nl
 # Date update: 12 December 2015
 
 import sys
@@ -23,8 +23,8 @@ lp = Clp()
 lp.set_name('vua-srl-dutch-additional-roles-for-nominal-predicates')
 lp.set_version('2.0')
 lp.set_timestamp()
-# revision version 2.0: module indication must be added to existing srl layer.
 
+# revision version 2.0: module indication must be added to existing srl layer.
 my_parser.add_linguistic_processor('srl', lp)
 
 # Create an index of the role ids
