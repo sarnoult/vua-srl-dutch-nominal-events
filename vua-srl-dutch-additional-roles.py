@@ -10,8 +10,12 @@
 # Author version 2 updates: Antske Fokkens antske.fokkens@vu.nl
 # Date update: 12 December 2015
 
+# Author version 2.1 updates: Sophie Arnoult s.i.arnoult@vu.nl
+# Date update: 17 June 2019
+
 import sys
-from KafNafParserPy import *
+from KafNafParserPy import KafNafParser, Clp, Crole, Cspan
+from KafNafParserPy.span_data import Ctarget
 import datetime 
 
 # Read input NAF file
@@ -21,7 +25,7 @@ my_parser = KafNafParser(input)
 ## Create header info
 lp = Clp()
 lp.set_name('vua-srl-dutch-additional-roles-for-nominal-predicates')
-lp.set_version('2.0')
+lp.set_version('2.1')
 lp.set_timestamp()
 
 # revision version 2.0: module indication must be added to existing srl layer.
